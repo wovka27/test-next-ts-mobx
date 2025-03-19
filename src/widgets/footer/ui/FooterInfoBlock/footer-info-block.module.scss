@@ -1,0 +1,10 @@
+.FooterInfoBlock {
+  flex-shrink: 0;
+  & > p {
+    margin-bottom: 10px;
+  }
+
+  &__list {
+    display: flex;
+  }
+}

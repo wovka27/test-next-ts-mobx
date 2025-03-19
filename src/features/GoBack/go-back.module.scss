@@ -1,0 +1,17 @@
+.main {
+  width: max-content;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  span {
+    margin-left: 1px;
+    color: var(--color-primary);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: 0;
+  }
+  svg path {
+    stroke: var(--color-primary);
+  }
+}

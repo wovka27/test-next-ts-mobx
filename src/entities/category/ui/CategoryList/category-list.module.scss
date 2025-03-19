@@ -1,0 +1,9 @@
+.CategoryList {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+
+  .item {
+    border-radius: 41px;
+  }
+}

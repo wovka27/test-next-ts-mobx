@@ -1,0 +1,32 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 292px;
+  color: rgb(114, 114, 128);
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  p {
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0;
+    &:nth-child(1), &:nth-child(2) {
+      font-size: 14px;
+    }
+
+    &:last-child span {
+      font-weight: bold;
+    }
+
+    span {
+      font-size: 16px;
+    }
+
+    display: flex;
+    justify-content: space-between;
+  }
+}

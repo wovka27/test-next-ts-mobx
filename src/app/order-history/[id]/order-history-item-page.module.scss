@@ -1,0 +1,13 @@
+.main {
+  padding-bottom: 120px;
+  .list {
+    --width: 400px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(var(--width), 1fr));
+    gap: 50px;
+    @media (max-width: 455px) {
+      --width: 270px;
+    }
+  }
+}
+

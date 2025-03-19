@@ -1,0 +1,44 @@
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2px;
+}
+
+.detail {
+  height: 350px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.list {
+  overflow-x: auto;
+  display: flex;
+  gap: 20px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.item {
+  overflow: hidden;
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+  border: 1px solid transparent;
+
+  &.selected, &:hover {
+    border-color: var(--color-primary);
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

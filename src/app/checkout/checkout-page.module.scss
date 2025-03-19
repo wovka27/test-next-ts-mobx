@@ -1,0 +1,11 @@
+.main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(292px, 1fr));
+  grid-gap: 20px 78px;
+  .formInner {
+    margin-top: 14px;
+  }
+  h2 {
+    grid-column: span 2;
+  }
+}

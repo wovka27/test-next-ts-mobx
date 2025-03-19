@@ -1,0 +1,38 @@
+.UiToggleButton {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 40px;
+  cursor: pointer;
+  line-height: 140%;
+  padding: 1px 10px;
+  letter-spacing: 0;
+  text-align: center;
+  background: var(--color-primary);
+  border: 1px solid transparent;
+  color: #fff;
+  transition: border-color ease-in-out .2s, background ease-in-out .2s, color ease-in-out .2s;
+
+  &.inline {
+    border-color: var(--color-primary);
+    background: #fff;
+    color: #000;
+  }
+
+  @media screen and (hover: hover) {
+    &:hover {
+
+    }
+    &.inline:hover {
+
+    }
+  }
+  @media screen and (hover: none) {
+    &:active {
+    }
+    &.inline:hover {
+
+    }
+  }
+
+}

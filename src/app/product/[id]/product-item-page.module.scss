@@ -1,0 +1,33 @@
+.main {
+  padding: 10px 36px 135px 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  h2 {
+    grid-column: span 2;
+  }
+
+  gap: 20px;
+  .title {
+    grid-column: span 2;
+  }
+  .info {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    p span {
+      font-size: 16px;
+      line-height: 19px;
+      color: rgb(45, 45, 47);
+    }
+  }
+
+  .description {
+    grid-column: span 2;
+    h3 {
+      margin-top: 50px;
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
+  }
+}

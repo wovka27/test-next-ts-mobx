@@ -1,0 +1,48 @@
+.Footer {
+  background: rgb(248,248,248);
+  padding: 32px 123px 32px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 57px;
+
+  &__info {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    & > p {
+      flex: 1;
+    }
+  }
+
+  &__policy {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  .Footer {
+    padding: 32px 20px;
+    &__info,
+    &__policy {
+      flex-wrap: wrap;
+    }
+    &__policy {
+      gap: 5px;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+@media screen and (max-width: 624px) {
+  .Footer {
+    &__info {
+      flex-direction: column;
+    }
+
+  }
+}
