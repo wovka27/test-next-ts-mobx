@@ -33,6 +33,7 @@ export default class ProductStore {
 
   @action async loadProducts(start: number, end: number) {
     if (this.is_loading || !this.has_more) return
+    this.setIsLoading(true)
 
     const param = new URLSearchParams(window.location.search).get('categoryId')
     const category_id: number[] = JSON.parse(param ?? '[8]')
@@ -46,6 +47,7 @@ export default class ProductStore {
       this.products = removeDuplicatesBy([...this.products, ...data], (item) => item.id)
       if (data.length < this.batch_size) this.has_more = false
     })
+    this.setIsLoading(false)
   }
 
   @action loadNextBatch() {
