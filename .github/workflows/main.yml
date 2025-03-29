@@ -32,6 +32,10 @@ jobs:
         run: npm i
       - name: Clean cache
         run: npm cache clean --force
+      - name: Add .env
+        run: echo "NEXT_PUBLIC_API_URL=https://test2.sionic.ru/api/" > .env
+      - name: Check .env
+        run: cat .env
       - name: Build
         run: npm run build
       - name: Setup Pages
@@ -39,7 +43,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist'
+          path: './.next'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
