@@ -34,7 +34,7 @@ jobs:
         run: npm cache clean --force
       - name: Add .env
         run: echo "NEXT_PUBLIC_API_URL=https://test2.sionic.ru/api/" > .env
-      - name: Check .env
+      - name: Check file .env
         run: cat .env
       - name: Build
         run: npm run build
